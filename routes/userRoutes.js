@@ -1,4 +1,4 @@
-const express = require('../node_modules/express');
+const express = require('express');
 const userController = require('../controllers/userController');
 const authController = require('../controllers/authController');
 
