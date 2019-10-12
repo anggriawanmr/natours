@@ -22,7 +22,10 @@ mongoose
     useFindAndModify: false,
     useUnifiedTopology: true
   })
-  .then(() => console.log('DB connection established'));
+  .then(() => console.log('DB connection established'))
+  .cath(err => {
+    console.log(`DB connection error: ${err.message}`);
+  });
 
 const port = process.env.PORT || 3000;
 const server = app.listen(port, () => {
