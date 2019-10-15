@@ -11,31 +11,11 @@ html
 
   body
     // Header
-    header.header
-      nav.nav.nav--tours
-        a.nav__el(href='#') All Tours
-      .header__logo
-        img(src='img/logo-white.png' alt='Natours Logo')
-      nav.nav.nav--user
-        //- a.nav__el(href='#') My bookings
-        //- a.nav__el(href='#')
-        //-   img.nav__user-img(src='img/user.jpg' alt='User Photo')
-        //-   Span Jonas
-        button.nav__el Log in
-        buttong.nav__el.nav__el--cta Sign Up
+    include _header
 
     //Content
     main.main
       h1= tour
 
     // Footer
-    footer.footer
-      .footer__logo
-        img(src='img/logo-green.png' alt='Natours logo')
-      ul.footer__nav
-        li: a(href='#') About Us
-        li: a(href='#') Download apps
-        li: a(href='#') Become a guide
-        li: a(href='#') Careers
-        li: a(href='#') Contact
-      p.footer__copyright &copy; by Jonas Schmedtmann. All rights reserved
+    include _footer
