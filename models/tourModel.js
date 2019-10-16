@@ -80,30 +80,30 @@ const tourSchema = new mongoose.Schema(
       type: Boolean,
       default: false
     },
-    // startLocation: {
-    //   // GeoJSON
-    //   type: {
-    //     type: String,
-    //     default: 'Point',
-    //     enum: ['Point']
-    //   },
-    //   coordinates: [Number],
-    //   address: String,
-    //   description: String
-    // },
-    // locations: [
-    //   {
-    //     type: {
-    //       type: String,
-    //       default: 'Point',
-    //       enum: ['Point']
-    //     },
-    //     coordinates: [Number],
-    //     address: String,
-    //     day: Number
-    //   }description: String,
-
-    // ],
+    startLocation: {
+      // GeoJSON
+      type: {
+        type: String,
+        default: 'Point',
+        enum: ['Point']
+      },
+      coordinates: [Number],
+      address: String,
+      description: String
+    },
+    locations: [
+      {
+        type: {
+          type: String,
+          default: 'Point',
+          enum: ['Point']
+        },
+        coordinates: [Number],
+        address: String,
+        description: String,
+        day: Number
+      }
+    ],
     guides: [
       {
         type: mongoose.Schema.ObjectId,
@@ -166,7 +166,7 @@ tourSchema.pre(/^find/, function(next) {
 
 tourSchema.pre(/^find/, function(next) {
   this.populate({
-    path: 'guides',
+    path: 'guides, reviews',
     select: '-__v -passwordChangedAt'
   });
 
