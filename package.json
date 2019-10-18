@@ -34,6 +34,7 @@
     "xss-clean": "^0.1.1"
   },
   "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
     "eslint": "^6.5.1",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-prettier": "^6.3.0",
