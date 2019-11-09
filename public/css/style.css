@@ -118,10 +118,10 @@ body {
     linear,
     left top,
     right top,
-    from(#def2f1),
-    to(#feffff)
+    from(#7dd56f),
+    to(#28b487)
   );
-  background-image: linear-gradient(to right, #def2f1, #feffff);
+  background-image: linear-gradient(to right, #7dd56f, #28b487);
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing: 0.1rem;
@@ -1112,10 +1112,10 @@ body {
     linear,
     left top,
     right bottom,
-    from(#7dd56f),
-    to(#28b487)
+    from(#def2f1),
+    to(#feffff)
   );
-  background-image: linear-gradient(to right bottom, #7dd56f, #28b487);
+  background-image: linear-gradient(to right bottom, #def2f1, #feffff);
   opacity: 0.7;
 }
 .card__picture-img {
