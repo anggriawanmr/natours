@@ -118,10 +118,10 @@ body {
     linear,
     left top,
     right top,
-    from(#7dd56f),
-    to(#28b487)
+    from(#3aafa9),
+    to(#2b7a78)
   );
-  background-image: linear-gradient(to right, #7dd56f, #28b487);
+  background-image: linear-gradient(to right, #3aafa9, #2b7a78);
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing: 0.1rem;
@@ -215,7 +215,7 @@ body {
 
 .btn:focus {
   outline: none;
-  background-color: #2e864b;
+  background-color: #2b7a78;
 }
 
 .btn--white {
@@ -368,11 +368,11 @@ body {
     linear,
     left top,
     right bottom,
-    from(#7dd56f),
-    to(#28b487)
+    from(#def2f1),
+    to(#feffff)
   );
-  background-image: linear-gradient(to right bottom, #7dd56f, #28b487);
-  opacity: 0.85;
+  background-image: linear-gradient(to right bottom, #def2f1, #feffff);
+  opacity: 0.25;
 }
 
 .heading-box {
@@ -479,7 +479,7 @@ body {
 .overview-box__icon {
   height: 2.25rem;
   width: 2.25rem;
-  fill: #55c57a;
+  fill: #3aafa9;
 }
 .overview-box__label {
   font-weight: 700;
@@ -577,10 +577,10 @@ body {
     linear,
     left top,
     right bottom,
-    from(#7dd56f),
-    to(#28b487)
+    from(#3aafa9),
+    to(#2b7a78)
   );
-  background: linear-gradient(to right bottom, #7dd56f, #28b487);
+  background: linear-gradient(to right bottom, #3aafa9, #2b7a78);
   clip-path: polygon(
     0 var(--section-rotate),
     100% 0,
@@ -665,7 +665,7 @@ body {
   margin-right: 1px;
 }
 .reviews__star--active {
-  fill: #55c57a;
+  fill: #3aafa9;
 }
 .reviews__star--inactive {
   fill: #bbb;
